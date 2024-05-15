@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Rating</title>
+    <link rel="stylesheet" href="style.css"> <!-- Import your custom CSS file -->
+    <style>
+        body {
+            background-color: white; 
+  	    background-image: url('cake5.jpg');
+	    display: flex;
+            justify-content: flex-end; /* Align content to the right side */
+            align-items: center; /* Center content vertically */
+            height: 100vh;/* Make the body full height */
+            margin: 0; /* Remove default margin */
+	}
+        .order-container {
+            width: 30%;
+            text-align: center;
+            padding: 40px; /* Increased padding */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: lavender; 
+        }
+
+        h2 {
+            font-size: 32px; 
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        label {
+            display: block; /* Display labels as blocks */
+            width: 100%; /* Set width for labels */
+            margin-bottom: 5px; /* Add some spacing between labels and inputs */
+            text-align: left; /* Align labels to the left */
+            font-weight: bold; /* Make labels bold */
+            font-size: 18px; /* Increased font size for labels */
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%; /* Set width for input fields */
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 30px;
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .rating label:hover,
+        .rating label:hover ~ label,
+        .rating input[type="radio"]:checked ~ label {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="cake4.PNG">
+    <div class="order-container">
+        <h2>Rate our Products</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br>
+
+	    <label for="Rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">★</label>
+            </div>
+	    <label for="rating">Review:</label>
+            <select id="rating" name="rating">
+                <option value="satisfied">Satisfied</option>
+                <option value="fully_satisfied">Fully Satisfied</option>
+                <option value="average">Average</option>
+                <option value="not_bad">Not Bad</option>
+                <option value="bad">Bad</option>
+            </select><br>
+	
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

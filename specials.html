@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specials | Sweet Cake</title>
+    <link rel="stylesheet" href="style.css"> <!-- Import your custom CSS file -->
+    <style>
+        .specials-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjust as needed */
+            gap: 20px; /* Adjust the gap between items */
+        }
+
+        .special-item {
+            width: calc(50% - 10px); /* Two items per row, adjust as needed */
+            position: relative; /* Add position relative */
+            overflow: hidden; /* Ensure image stays within box */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .special-item img {
+            width: 100%; /* Ensure the image fills the container */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
+
+        .special-info {
+            position: absolute; /* Position the info outside the box */
+            bottom: 0;
+            left: 20;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for text */
+            padding: 10px;
+            text-align: center;
+            font-size: 18px; /* Increase font size */
+        }
+
+        .special-info h3,
+        .special-info p {
+            margin: 0; /* Remove default margin */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header class="header">
+        <!-- Your header content goes here -->
+    </header>
+
+    <!-- Main content section -->
+    <main class="main-content">
+        <section class="specials" id="specials">
+            <div class="heading">
+                <h2>Specials</h2>
+            </div>
+            <div class="specials-container">
+                <!-- First item -->
+                <div class="special-item">
+                    <img src="chocolatecake1.jpeg" alt="Chocolate Cake">
+                    <div class="special-info">
+                        <h3>Chocolate Cake</h3>
+                        <p>Price: $15.99</p>
+                    </div>
+                </div>
+                <!-- Second item -->
+                <div class="special-item">
+                    <img src="pastry1.jpeg" alt="Blueberry Pastry">
+                    <div class="special-info">
+                        <h3>Blueberry Pastry</h3>
+                        <p>Price: $7.99</p>
+                    </div>
+                </div>
+                <!-- Third item -->
+                <div class="special-item">
+                    <img src="vanillacake.jpeg" alt="Vanilla Cake">
+                    <div class="special-info">
+                        <h3>Vanilla Cake</h3>
+                        <p>Price: $12.99</p>
+                    </div>
+                </div>
+                <!-- Fourth item -->
+                <div class="special-item">
+                    <img src="pastry2.jpg" alt="Strawberry Pastry">
+                    <div class="special-info">
+                        <h3>Strawberry Pastry</h3>
+                        <p>Price: $6.99</p>
+                    </div>
+                </div>
+                <!-- Fifth item -->
+                <div class="special-item">
+                    <img src="redvelvetcake.jpeg" alt="Red Velvet Cake">
+                    <div class="special-info">
+                        <h3>Red Velvet Cake</h3>
+                        <p>Price: $18.99</p>
+                    </div>
+                </div>
+                <!-- Sixth item -->
+                <div class="special-item">
+                    <img src="pastry3.jpg" alt="Apple Cinnamon Pastry">
+                    <div class="special-info">
+                        <h3>Apple Cinnamon Pastry</h3>
+                        <p>Price: $8.99</p>
+                    </div>
+                </div>
+                <!-- Add more items -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <!-- Your footer content goes here -->
+        <div class="credit">
+            Thanks for visiting! Have a great day.
+        </div>
+
+    </footer>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
